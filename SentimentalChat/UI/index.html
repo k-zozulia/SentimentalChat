@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <h1>Sentimental Chat</h1>
+                <img src="heart_icon.svg" alt="Chat Icon" class="chat-icon">
+            </div>
+            <div class="username-input">
+                <input type="text" id="username" placeholder="Enter your name">
+                <button id="save-btn">Start</button>
+            </div>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="message-container">
+                <!-- Messages added in js -->
+            </div>
+        </div>
+        <div class="footer">
+            <input type="text" id="message" placeholder="Type a message">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
+    
+    <script src="uiHelper.js"></script>
+    <script src="messageHandler.js"></script>
+</body>
+</html>
